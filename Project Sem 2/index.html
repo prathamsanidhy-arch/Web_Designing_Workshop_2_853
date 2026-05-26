@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon India Clone - Great Indian Festival</title>
+    <!-- Font Awesome for realistic icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Top Navigation Belt -->
+        <div class="nav-belt">
+            <div class="nav-left">
+                <div class="nav-logo border-hover">
+                    <span class="logo-text">amazon.in</span>
+                </div>
+                <div class="nav-location border-hover">
+                    <div class="nav-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="nav-text">
+                        <span class="line-1">Delivering to Mumbai 400001</span>
+                        <span class="line-2">Update location</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-fill">
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>All</option>
+                        <option>Appliances</option>
+                        <option>Electronics</option>
+                        <option>Home & Kitchen</option>
+                    </select>
+                    <input type="text" class="search-input" id="search-query" placeholder="Search Amazon.in">
+                    <button class="search-button" id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-lang border-hover">
+                    <div class="flag-icon">🇮🇳</div>
+                    <span class="lang-text">EN</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <a href="login.html" class="nav-account border-hover">
+                    <span class="line-1">Hello, sign in</span>
+                    <span class="line-2">Account & Lists <i class="fa-solid fa-caret-down"></i></span>
+                </a>
+                <div class="nav-orders border-hover">
+                    <span class="line-1">Returns</span>
+                    <span class="line-2">& Orders</span>
+                </div>
+                <div class="nav-cart border-hover" id="cart-btn">
+                    <div class="cart-icon">
+                        <span class="cart-count" id="cart-val">0</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <span class="cart-text">Cart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Navigation Bar -->
+        <nav class="nav-main">
+            <div class="nav-main-left">
+                <div class="nav-all border-hover">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>All</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="border-hover">Fresh</a>
+                    <a href="#" class="border-hover">Amazon miniTV</a>
+                    <a href="#" class="border-hover">Sell</a>
+                    <a href="#" class="border-hover">Best Sellers</a>
+                    <a href="#" class="border-hover">Mobiles</a>
+                    <a href="#" class="border-hover">Today's Deals</a>
+                    <a href="#" class="border-hover">Customer Service</a>
+                    <a href="#" class="border-hover">Prime</a>
+                    <a href="#" class="border-hover">Electronics</a>
+                </div>
+            </div>
+            <div class="nav-main-right">
+                <div class="nav-ad border-hover">
+                    New Launches from Mobiles, Electronics & more
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-slider">
+            <div class="slides">
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1600&h=600&fit=crop" alt="Great Indian Festival Sale">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&h=600&fit=crop" alt="Fashion Sale">
+                <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1600&h=600&fit=crop" alt="Electronics Discount">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600&h=600&fit=crop" alt="Daily Essentials Sale">
+                <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1600&h=600&fit=crop" alt="Home Revamp Sale">
+            </div>
+            <div class="slider-nav">
+                <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        
+        <div class="search-results-container" id="search-results">
+            <!-- Simulated search results will be injected here -->
+        </div>
+        
+        <div class="main-content-grid" id="main-grid">
+            <!-- 1. Appliances for your home -->
+            <div class="category-card">
+                <h2>Appliances for your home</h2>
+                <div class="grid-2x2">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=200&h=150&fit=crop" alt="Air Conditioners">
+                        <p>Air Conditioners</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1585659722982-7896136738d0?w=200&h=150&fit=crop" alt="Refrigerators">
+                        <p>Refrigerators</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=200&h=150&fit=crop" alt="Microwaves">
+                        <p>Microwaves</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?w=200&h=150&fit=crop" alt="Washing Machines">
+                        <p>Washing Machines</p>
+                    </div>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+
+            <!-- 2. Revamp your home in style -->
+            <div class="category-card">
+                <h2>Revamp your home in style</h2>
+                <div class="grid-2x2">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=200&h=150&fit=crop" alt="Home Decor">
+                        <p>Home Decor</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=200&h=150&fit=crop" alt="Furniture">
+                        <p>Furniture</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7eaa511?w=200&h=150&fit=crop" alt="Lighting">
+                        <p>Lighting</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=200&h=150&fit=crop" alt="Cushion Covers">
+                        <p>Cushion Covers</p>
+                    </div>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+
+            <!-- 3. Elevate your kitchen -->
+            <div class="category-card">
+                <h2>Starting ₹4,990 | Elevate your kitchen</h2>
+                <div class="grid-2x2">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=200&h=150&fit=crop" alt="Cookware">
+                        <p>Cookware</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1526733158272-4403bf110261?w=200&h=150&fit=crop" alt="Mixer Grinders">
+                        <p>Mixer Grinders</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=200&h=150&fit=crop" alt="Gas Stoves">
+                        <p>Gas Stoves</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=200&h=150&fit=crop" alt="Water Purifiers">
+                        <p>Water Purifiers</p>
+                    </div>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+
+            <!-- 4. Bestselling smart TVs -->
+            <div class="category-card">
+                <h2>Bestselling smart TVs</h2>
+                <div class="grid-2x2">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=200&h=150&fit=crop" alt="OLED TVs">
+                        <p>OLED TVs</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?w=200&h=150&fit=crop" alt="QLED TVs">
+                        <p>QLED TVs</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=200&h=150&fit=crop" alt="LED TVs">
+                        <p>LED TVs</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1461151304267-38535e770d76?w=200&h=150&fit=crop" alt="4K TVs">
+                        <p>4K TVs</p>
+                    </div>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+
+            <!-- 5. Styles for Men -->
+            <div class="category-card">
+                <h2>Up to 60% off | Styles for Men</h2>
+                <div class="grid-2x2">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1516257984877-a03a806d6fa7?w=200&h=150&fit=crop" alt="Clothing">
+                        <p>Clothing</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&h=150&fit=crop" alt="Footwear">
+                        <p>Footwear</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&h=150&fit=crop" alt="Watches">
+                        <p>Watches</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=200&h=150&fit=crop" alt="Bags">
+                        <p>Bags</p>
+                    </div>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+
+            <!-- 6. Styles for Women -->
+            <div class="category-card">
+                <h2>Up to 60% off | Styles for Women</h2>
+                <div class="grid-2x2">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=200&h=150&fit=crop" alt="Clothing">
+                        <p>Clothing</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=150&fit=crop" alt="Footwear">
+                        <p>Footwear</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=150&fit=crop" alt="Watches">
+                        <p>Watches</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=200&h=150&fit=crop" alt="Jewellery">
+                        <p>Jewellery</p>
+                    </div>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+
+            <!-- 7. Automotive essentials -->
+            <div class="category-card">
+                <h2>Automotive essentials | Up to 60% off</h2>
+                <div class="grid-2x2">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1486006396193-47101bb910a7?w=200&h=150&fit=crop" alt="Car Accessories">
+                        <p>Car Accessories</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1519750157634-b6d493a0f77c?w=200&h=150&fit=crop" alt="Bike Accessories">
+                        <p>Bike Accessories</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=200&h=150&fit=crop" alt="Car Electronics">
+                        <p>Car Electronics</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=200&h=150&fit=crop" alt="Tyres & Rims">
+                        <p>Tyres & Rims</p>
+                    </div>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+
+            <!-- 8. Fitness needs -->
+            <div class="category-card">
+                <h2>Shop for your fitness needs</h2>
+                <div class="grid-2x2">
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=200&h=150&fit=crop" alt="Dumbbells">
+                        <p>Dumbbells</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?w=200&h=150&fit=crop" alt="Yoga Mats">
+                        <p>Yoga Mats</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=200&h=150&fit=crop" alt="Fitness Trackers">
+                        <p>Fitness Trackers</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4?w=200&h=150&fit=crop" alt="Gym Wear">
+                        <p>Gym Wear</p>
+                    </div>
+                </div>
+                <a href="#" class="shop-now">Shop now</a>
+            </div>
+        </div>
+
+        <!-- Horizontal Scrollers -->
+        <section class="scroller-section">
+            <h2>Inspired by your browsing history</h2>
+            <div class="scroller-container">
+                <!-- Item 1 -->
+                <div class="scroller-item">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&h=200&fit=crop" alt="Product">
+                    <h3 class="product-title">Sony WH-1000XM4 Noise Cancelling Wireless Headphones - 30 Hours Battery Life</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <span>4.5</span>
+                    </div>
+                    <span class="badge-deal">Limited time deal</span>
+                    <div class="price-row">
+                        <span class="discount">-15%</span>
+                        <span class="price-symbol">₹</span>
+                        <span class="price-amount">19,990</span>
+                    </div>
+                    <p class="delivery">Get it by <b>Friday, May 29</b></p>
+                </div>
+                <!-- Item 2 -->
+                <div class="scroller-item">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&h=200&fit=crop" alt="Product">
+                    <h3 class="product-title">Apple Watch Series 8 [GPS 45mm] Smart Watch w/ Midnight Aluminum Case</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                    <span class="badge-bestseller">Bestseller</span>
+                    <div class="price-row">
+                        <span class="discount">-10%</span>
+                        <span class="price-symbol">₹</span>
+                        <span class="price-amount">45,900</span>
+                    </div>
+                    <p class="delivery">Get it by <b>Tomorrow, May 28</b></p>
+                </div>
+                <!-- More items can be added here -->
+                <div class="scroller-item">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=200&h=200&fit=crop" alt="Product">
+                    <h3 class="product-title">Instax Mini 11 Instant Camera - Sky Blue</h3>
+                    <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> <span>4.0</span></div>
+                    <div class="price-row">
+                        <span class="price-symbol">₹</span>
+                        <span class="price-amount">5,999</span>
+                    </div>
+                    <p class="delivery">Get it by <b>Sunday, May 31</b></p>
+                </div>
+                <div class="scroller-item">
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=200&h=200&fit=crop" alt="Product">
+                    <h3 class="product-title">Apple iPad Air (2022) with M1 chip (10.9-inch, Wi-Fi, 64GB) - Space Gray</h3>
+                    <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> <span>4.7</span></div>
+                    <span class="badge-deal">Great Indian Festival</span>
+                    <div class="price-row">
+                        <span class="discount">-12%</span>
+                        <span class="price-symbol">₹</span>
+                        <span class="price-amount">54,900</span>
+                    </div>
+                    <p class="delivery">Get it by <b>Monday, June 1</b></p>
+                </div>
+                <div class="scroller-item">
+                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=200&h=200&fit=crop" alt="Product">
+                    <h3 class="product-title">Dell XPS 13 Laptop - 13.4-inch UHD+ Touch - Intel Core i7 - 16GB Memory</h3>
+                    <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span>5.0</span></div>
+                    <div class="price-row">
+                        <span class="price-symbol">₹</span>
+                        <span class="price-amount">1,24,990</span>
+                    </div>
+                    <p class="delivery">Get it by <b>Wednesday, June 3</b></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="scroller-section">
+            <h2>Your browsing history</h2>
+            <div class="scroller-container">
+                <!-- Similar items as above for demonstration -->
+                <div class="scroller-item">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=200&h=200&fit=crop" alt="Product">
+                    <h3 class="product-title">Logitech MX Master 3S Wireless Mouse - Graphite</h3>
+                    <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span>4.9</span></div>
+                    <div class="price-row">
+                        <span class="price-symbol">₹</span>
+                        <span class="price-amount">10,995</span>
+                    </div>
+                </div>
+                <div class="scroller-item">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=200&h=200&fit=crop" alt="Product">
+                    <h3 class="product-title">JBL Flip 6 Waterproof Portable Bluetooth Speaker</h3>
+                    <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> <span>4.2</span></div>
+                    <span class="badge-deal">Limited time deal</span>
+                    <div class="price-row">
+                        <span class="discount">-20%</span>
+                        <span class="price-symbol">₹</span>
+                        <span class="price-amount">9,999</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="back-to-top">Back to top</a>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Sell under Amazon Accelerator</a></li>
+                    <li><a href="#">Protect and Build Your Brand</a></li>
+                    <li><a href="#">Amazon Global Selling</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">COVID-19 and Amazon</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">100% Purchase Protection</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">amazon.in</div>
+            <div class="footer-countries">
+                <a href="#">Australia</a> <a href="#">Brazil</a> <a href="#">Canada</a> <a href="#">China</a> <a href="#">France</a> <a href="#">Germany</a> <a href="#">Italy</a> <a href="#">Japan</a> <a href="#">Mexico</a> <a href="#">Netherlands</a> <a href="#">Poland</a> <a href="#">Singapore</a> <a href="#">Spain</a> <a href="#">Turkey</a> <a href="#">United Arab Emirates</a> <a href="#">United Kingdom</a> <a href="#">United States</a>
+            </div>
+            <div class="footer-copy">
+                <span>Conditions of Use & Sale</span>
+                <span>Privacy Notice</span>
+                <span>Interest-Based Ads</span>
+                <span>&copy; 1996-2023, Amazon.com, Inc. or its affiliates</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Overlays -->
+    <div class="drawer-overlay" id="overlay"></div>
+
+    <!-- Side Navigation Drawer -->
+    <div class="side-drawer" id="side-drawer">
+        <div class="drawer-header">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Hello, sign in</span>
+            <button class="close-btn" id="close-side-drawer"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="drawer-content">
+            <h3>Trending</h3>
+            <ul>
+                <li>Best Sellers</li>
+                <li>New Releases</li>
+                <li>Movers and Shakers</li>
+            </ul>
+            <hr>
+            <h3>Digital Content And Devices</h3>
+            <ul>
+                <li>Echo & Alexa <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Fire TV <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Kindle E-Readers & eBooks <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Amazon Prime Video <i class="fa-solid fa-chevron-right"></i></li>
+            </ul>
+            <hr>
+            <h3>Shop By Category</h3>
+            <ul>
+                <li>Mobiles, Computers <i class="fa-solid fa-chevron-right"></i></li>
+                <li>TV, Appliances, Electronics <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Men's Fashion <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Women's Fashion <i class="fa-solid fa-chevron-right"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="drawer-header">
+            <span>Shopping Cart</span>
+            <button class="close-btn" id="close-cart-drawer"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-list">
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                Subtotal: <span id="cart-total-price">₹0</span>
+            </div>
+            <button class="checkout-btn">Proceed to Buy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
