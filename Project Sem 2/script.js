@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlider();
     });
 
-    // --- 2. Side Drawer (Hamburger Menu) Logic ---
+    
     const navAll = document.querySelector('.nav-all');
     const sideDrawer = document.getElementById('side-drawer');
     const overlay = document.getElementById('overlay');
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleCartDrawer(false);
     });
 
-    // --- 3. Cart Drawer & Logic ---
+   
     const cartBtn = document.getElementById('cart-btn');
     const cartDrawer = document.getElementById('cart-drawer');
     const closeCartDrawer = document.getElementById('close-cart-drawer');
